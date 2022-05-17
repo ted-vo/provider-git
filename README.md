@@ -1,9 +1,10 @@
 # :twisted_rightwards_arrows: provider-git
-[![CI](https://github.com/go-semantic-release/provider-git/workflows/CI/badge.svg?branch=master)](https://github.com/go-semantic-release/provider-git/actions?query=workflow%3ACI+branch%3Amaster)
-[![Go Report Card](https://goreportcard.com/badge/github.com/go-semantic-release/provider-git)](https://goreportcard.com/report/github.com/go-semantic-release/provider-git)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/go-semantic-release/provider-git)](https://pkg.go.dev/github.com/go-semantic-release/provider-git)
 
-The git provider for [go-semantic-release](https://github.com/go-semantic-release/semantic-release).
+[![CI](https://github.com/ted-vo/provider-git/workflows/CI/badge.svg?branch=master)](https://github.com/ted-vo/provider-git/actions?query=workflow%3ACI+branch%3Amaster)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ted-vo/provider-git)](https://goreportcard.com/report/github.com/ted-vo/provider-git)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/ted-vo/provider-git)](https://pkg.go.dev/github.com/ted-vo/provider-git)
+
+The git provider for [semantic-release](https://github.com/ted-vo/semantic-release).
 
 This plugin will make sure that the continuous integration environment
 conditions are met. Namely that the release is happening on the
@@ -35,7 +36,7 @@ To use this plugin you need to include the following block in your
 |:----------------:|:---------------------------:|:--------------------------------------------------:|
 | default_branch   | master                      | The branch where deployments should happen.        |
 | tagger_name      | semantic-release            | The name of the user creating the tag.             |
-| tagger_email     | git@go-semantic-release.xyz | The email address of the user creating the tag.    |
+| tagger_email     | git@semantic-release.xyz    | The email address of the user creating the tag.    |
 | remote_name      |                             | The name of the remote to push to.                 |
 | auth             | *(Depends on origin URL)*   | The authentication type to use (basic, ssh)        |
 | auth_username    | git                         | The name of the user to use for authentication.    |

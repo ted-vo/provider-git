@@ -1,9 +1,9 @@
 package main
 
 import (
-	gitProvider "github.com/go-semantic-release/provider-git/pkg/provider"
-	"github.com/go-semantic-release/semantic-release/v2/pkg/plugin"
-	"github.com/go-semantic-release/semantic-release/v2/pkg/provider"
+	gitProvider "github.com/ted-vo/provider-git/pkg/provider"
+	"github.com/ted-vo/semantic-release/v3/pkg/plugin"
+	"github.com/ted-vo/semantic-release/v3/pkg/provider"
 )
 
 func main() {

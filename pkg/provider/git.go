@@ -15,8 +15,8 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/transport"
 	"github.com/go-git/go-git/v5/plumbing/transport/http"
 	"github.com/go-git/go-git/v5/plumbing/transport/ssh"
-	"github.com/go-semantic-release/semantic-release/v2/pkg/provider"
-	"github.com/go-semantic-release/semantic-release/v2/pkg/semrel"
+	"github.com/ted-vo/semantic-release/v3/pkg/provider"
+	"github.com/ted-vo/semantic-release/v3/pkg/semrel"
 )
 
 var PVERSION = "dev"
@@ -78,6 +78,14 @@ func (repo *Repository) Init(config map[string]string) error {
 	repo.repo = gr
 
 	return nil
+}
+
+func (repo *Repository) Name() string {
+	return "git"
+}
+
+func (repo *Repository) Version() string {
+	return PVERSION
 }
 
 func (repo *Repository) GetInfo() (*provider.RepositoryInfo, error) {
@@ -197,10 +205,6 @@ func (repo *Repository) CreateRelease(release *provider.CreateReleaseConfig) err
 	return err
 }
 
-func (repo *Repository) Name() string {
-	return "git"
-}
-
-func (repo *Repository) Version() string {
-	return PVERSION
+func (repo *Repository) CommitFilesChanged(filePaths []string, message string) (string, error) {
+	return "", nil
 }

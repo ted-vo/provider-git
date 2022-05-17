@@ -12,8 +12,8 @@ import (
 	"github.com/go-git/go-git/v5/plumbing"
 	"github.com/go-git/go-git/v5/plumbing/object"
 	"github.com/go-git/go-git/v5/plumbing/transport/http"
-	"github.com/go-semantic-release/semantic-release/v2/pkg/provider"
 	"github.com/stretchr/testify/require"
+	"github.com/ted-vo/semantic-release/v3/pkg/provider"
 )
 
 var testGitPath string
